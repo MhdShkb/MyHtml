@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+      body{
+        background-color: hwb(312 52% 5%);
+      }
+
+      .main{
+        margin: 10%;
+        display: flex;
+        justify-content: center;
+        
+      }
+
+      .div1{   
+      }
+
+      .div2{
+        background-color: black;
+        height: 500px;
+        width: 350px;
+        color: white;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.518) 0px 19px 38px, rgba(0, 0, 0, 0.518) 0px 15px 12px;
+      }
+
+      img{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.518) 0px 19px 38px, rgba(0, 0, 0, 0.518) 0px 15px 12px;
+
+      }
+      
+      h2{
+        text-align: center;
+      }
+
+      input[type='text']{
+        margin-top: 35px;
+        background-color: black;
+        color: darkgrey;
+        border: none;
+        border-bottom: 1px solid gray;
+
+      }
+
+      /* select[name='state']{
+        margin-top: 20px;
+        background-color: black;
+        color: darkgrey;
+      } */
+
+      button{
+        margin-top: 20px;
+        background-color: rgb(17, 220, 17);
+        color: aliceblue;
+        border-radius: 20px;
+        width: 110px;
+        height: 40px;
+        border: non;
+      }
+
+      button:hover{
+        background-color:aliceblue;
+        color: rgb(17, 220, 17);
+        box-shadow: rgb(0, 255, 55) 0px 2px 6px, rgb(0, 255, 55) 0px 2px 4px;
+
+      }
+
+    </style>
+</head>
+<body>
+   
+    <div class="main">
+
+      <div class="div1">
+        <img src="bg-heading-03.jpg" alt="" height="500px" width="350px">
+      </div> 
+
+      <div class="div2  ">
+          <h2>Registration Info</h2>
+          
+        <div style="display: flex;justify-content: center;">
+          <form action="">
+            <input type="text" placeholder="First Name" name="first name" id="first name" required><br>
+            <input type="text" placeholder="Address" name="address" id="address" required><br>
+            <input type="text" placeholder="Zip Code" name="zip code" id="zip code" required><br><br><br>
+            <select style="background-color: black; color: darkgrey; border: none; border-bottom: 1px solid gray; " name="State" id="state">
+              <option value="Kerala">Kerala</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+              <option value="Delhi">Delhi</option>
+            </select><br>
+            <input type="text" placeholder="Username(6-8 characters)" name="Username(6-8 characters)" id="Username(6-8 characters)" required><br>
+            <input type="text" placeholder="Email" name="email" id="email" required><br>
+            <button type="Submit">submit</button>
+           </form>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
