@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    min-height: 100vh;
+}
+
+body{
+    background-color:rgb(28, 15, 52);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 800px;
+    display: flex;
+}
+
+.sidebar{
+    background: color #1d204b;
+    border-radius: 10px;
+}
+
+.tracks{
+    flex-grow: 1;
+    margin: left 1.5em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5em;
+}
+
+.profile{
+    background-color: blue;
+    padding: 1.5em;
+    border-radius: 10px;
+}
+
+.profile img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 2em;
+}
+
+.stats-text{
+    font-size: .8em;
+    color: #cecece;
+}
+
+.name{
+    font-size: 1.5em;
+    color: #fff;
+     
+}
+
+.times{
+    padding: 1em 1.5em;
+    color:rgba(255, 255, 255, 0, 0.5);
+}
+
+.times p.active{
+    color: rgba(255, 255, 255, 0.9);
+    margin: .5em 0;
+}
+
+.track-items{
+    background-color:#fff ;
+    border-radius: 10px;
+    background-color: #1d204b;
+    color: #fff;
+    padding: 1em;
+}
+
+.track-item .nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.track-item .nav span:nth-child(2){
+    margin-top: -.3em;
+    font-size: bolder;
+
+}
+
+.track-item .time{
+    font-size: 2em;
+    margin-top: .5em;
+}
+
+.track-item .previous{
+    color: rgba(255, 255, 255, 0, 0.5);
+}

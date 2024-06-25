@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.image{
+            position: relative;
+        }
+
+        div.topleft{
+            position: fixed;
+            top: 10px;
+            left: 20px;
+            font-size:xx-large;
+            color: blue;
+        }
+
+        div.topright{
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: xx-large;
+            color: yellowgreen;
+        }
+
+        div.center{
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: blueviolet;
+            font-size: xx-large;
+        }
+
+        div.bottomleft{
+            position:sticky;
+            bottom: 0;
+            left: 20px;
+            font-size: xx-large;
+            color: violet;
+        }
+
+        div.bottomright{
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+            color: turquoise;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="How-to-use-data-768x768.jpg" alt="" width="100%" height="100%">
+        <div class="topleft">TOP LEFT</div>
+        <div class="topright">TOP RIGHT</div>
+        <div class="center">CENTER</div>
+        <div class="bottomleft">BOTTOM LEFT</div>
+        <div class="bottomright">BOTTOM RIGHT</div>
+    </div>
+</body>
+</html>
